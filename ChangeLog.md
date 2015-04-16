@@ -1,3 +1,7 @@
+### 0.3.1 / 2015-04-17
+
+* Drop support for hunspell-1.2
+
 ### 0.3.0 / 2013-05-01
 
 * Detect Ubuntu's hunspell directory (`/usr/share/hunspell`).
