@@ -64,7 +64,7 @@ module FFI
     # Known directories to search within for dictionaries.
     KNOWN_DIRECTORIES = [
       # User
-      File.join(Gem.user_home,USER_DIR),
+      File.join(Gem.user_home, USER_DIR),
       # Debian
       '/usr/local/share/myspell/dicts',
       '/usr/share/myspell/dicts',
@@ -75,7 +75,11 @@ module FFI
       '/usr/share/myspell',
       # Mac Ports
       '/opt/local/share/hunspell',
-      '/opt/share/hunspell'
+      '/opt/share/hunspell',
+      # Mac User Spelling
+      File.join(Gem.user_home, 'Library', 'Spelling'),
+      # Mac System Spelling
+      '/System/Library/Spelling'
     ]
 
     #
